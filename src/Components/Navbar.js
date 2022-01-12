@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 import '../Styles/Navbar.scss'
-import Navlink from './Navlink';
 const Navbar = () => {
     const [togglerClicked, setTogglerClicked] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
+    const screenWidthHandler = () => {
+        if (window.innerWidth < 769) {
+            setIsMobile(true);
+        }
+    }
+
+    window.addEventListener('resize', screenWidthHandler)
     return (
         <>
             <div className='navbar'>
@@ -11,7 +18,7 @@ const Navbar = () => {
                     Agency
                 </div>
                 {
-                    window.innerWidth > 768 ?
+                    !isMobile ?
                         <>
                             <div className="nav-link">
                                 <a className='link' href="http://">Home</a>
