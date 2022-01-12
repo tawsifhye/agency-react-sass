@@ -24,4 +24,17 @@
     &:first-child{
         color: $indigo_color;
     }
-    }
+}
+@mixin title($font-weight, $font-size, $line-height) {
+    color: $white_font;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+.details {
+    font-size: 13.9375px;
+    line-height: 26px;
+    letter-spacing: -0.43573px;
+    color: rgba(255, 255, 255, 0.7);
+}
