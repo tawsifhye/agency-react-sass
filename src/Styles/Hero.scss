@@ -23,4 +23,8 @@
             color: rgba(255, 255, 255, 0.7);
         }
     }
+    @media (max-width: $sm_breakpoint){
+        display: flex;
+        flex-direction: column;
+    }
 }
