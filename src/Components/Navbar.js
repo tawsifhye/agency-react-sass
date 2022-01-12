@@ -39,7 +39,8 @@ const Navbar = () => {
                 }
 
                 {
-                    togglerClicked && <div className="mobile-menu">
+                    togglerClicked &&
+                    <div className="mobile-menu">
                         <a href="http://">Home</a>
                         <a href="http://">Services</a>
                         <a href="http://">Our Projects</a>

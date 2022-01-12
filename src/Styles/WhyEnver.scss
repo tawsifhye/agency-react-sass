@@ -1,0 +1,23 @@
+@import 'Variables';
+@import 'common';
+.why-enver{
+    margin-top: 100px;
+    
+    div{
+        display: flex;
+        justify-content: space-evenly;
+        div{
+        @include title(bold, 39.8214px, 46px);
+    }
+    p{
+        @extend .details;
+    }
+    @media (max-width: $sm_breakpoint) {
+        flex-direction: column;
+    }
+ }
+ img{
+     width: 100%;
+ }
+}
+    
