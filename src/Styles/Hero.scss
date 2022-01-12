@@ -1,0 +1,23 @@
+@import 'Variables';
+@import 'common';
+
+.hero-section{
+    @extend .container;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    .hero-title{
+        div{
+            color: $white_font;
+            font-weight: bold;
+            font-size: 53.0952px;
+            line-height: 56px;
+        }
+        p{
+            font-size: 13.9375px;
+            line-height: 26px;
+            letter-spacing: -0.43573px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}

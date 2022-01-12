@@ -1,0 +1,35 @@
+@import './Variables';
+@import './common';
+
+.navbar{
+    @extend .container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-link{
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         a{
+        color: $white_font;
+        font-size:$navbar_font_size;
+        text-decoration: none;
+        margin-right: 20px;
+        &:first-child{
+            color: $indigo_color;
+        }
+        }
+    }
+   .logo{
+       color: $white_font;
+       font-size: 30px;
+       font-weight: bold;
+   }
+   .button{
+    @include button(0.66369px solid #FFFFFF,  3.31845px, none);
+    &:hover{
+        background-color: $indigo_color;
+    }
+   }
+}

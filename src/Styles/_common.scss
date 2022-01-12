@@ -1,0 +1,14 @@
+@import 'Variables';
+
+@mixin button($border, $border_radius, $background_color) {
+    border: $border;
+    border-radius: $border_radius;
+    background-color: $background_color;
+    text-decoration: none;
+    color: $white_font;
+    padding: 10px; 
+}
+
+.container{
+    margin: 0 250px;
+}
