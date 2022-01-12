@@ -1,22 +1,23 @@
 @import 'Variables';
 @import 'common';
 .why-enver{
+    @extend .container;
     margin-top: 100px;
-    
     div{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         div{
         @include title(bold, 39.8214px, 46px);
     }
     p{
         @extend .details;
     }
-    @media (max-width: $sm_breakpoint) {
+    @include sm {
         flex-direction: column;
     }
  }
  img{
+     margin-top: 20px;
      width: 100%;
  }
 }

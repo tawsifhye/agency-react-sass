@@ -3,7 +3,7 @@
 
 .navbar{
     position: relative;
-    // @extend .container;
+    @extend .container;
     height: 80px;
     display: flex;
     justify-content: space-between;

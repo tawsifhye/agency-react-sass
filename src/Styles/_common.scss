@@ -1,5 +1,9 @@
 @import 'Variables';
-
+@mixin sm {
+    @media (max-width: $sm_breakpoint){
+        @content;
+    }
+}
 @mixin button($border, $border_radius, $background_color, $width) {
     width: $width;
     border: $border;
@@ -12,7 +16,10 @@
 }
 
 .container{
-    margin: 0 250px;
+    margin: 0 200px;
+    @include sm{
+        margin: 0 0;
+    }
 }
 
 .link{
@@ -38,3 +45,4 @@
     letter-spacing: -0.43573px;
     color: rgba(255, 255, 255, 0.7);
 }
+

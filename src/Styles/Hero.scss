@@ -2,7 +2,7 @@
 @import 'common';
 
 .hero-section{
-    // @extend .container;
+    @extend .container;
     margin-top: 100px;
     display: grid;
     grid-template-columns: 3fr 5fr;
@@ -16,7 +16,7 @@
             @extend .details;
         }
     }
-    @media (max-width: $sm_breakpoint){
+    @include sm{
         display: flex;
         flex-direction: column;
     }
