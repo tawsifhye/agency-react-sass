@@ -6,6 +6,8 @@
     margin-top: 100px;
     display: grid;
     grid-template-columns: 3fr 5fr;
+    justify-items: center;
+    align-items: center;
     .hero-title{
         div{
             color: $white_font;

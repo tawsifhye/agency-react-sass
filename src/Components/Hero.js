@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/Hero.scss'
+import banner from '../images/hero-image.png'
 const Hero = () => {
     return (
         <div className='hero-section'>
@@ -11,8 +12,8 @@ const Hero = () => {
                     Enver studio is a digital studio that offers several services such as UI/UX Design to developers, we will provide the best service for those of you who use our services.
                 </p>
             </div>
-            <div>
-
+            <div className='hero-banner'>
+                <img src={banner} alt="" />
             </div>
         </div>
     );
