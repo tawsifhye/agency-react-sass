@@ -5,21 +5,17 @@
   // @extend .container;
   margin-top: 30px;
   padding: 0 70px;
-  &:first-child i {
-    padding: 20px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    color: red;
-    // background-image: url('data:../images/laptop-code-solid.svg+xml;utf8,<svg ...><g stroke="red" ... /></g></svg>');
-    // background: url(../images/laptop-code-solid.svg) no-repeat center center;
-
-    &:before {
-      //   content: "";
-      //   background-size: 100px;
-      //   background: url(../images/laptop-code-solid.svg) no-repeat center center;
-      //   color: $white_font;
-    }
+  &:first-child i,
+  &:nth-child(5) i {
+    @include icon_design($indigo_color, $indigo_icon_bg);
+  }
+  &:nth-child(2) i,
+  &:last-child i {
+    @include icon_design($red_color, $red_icon_bg);
+  }
+  &:nth-child(3) i,
+  &:nth-child(4) i {
+    @include icon_design($yellow_color, $yellow_color_bg);
   }
   .service-title {
     @include title(600, 18.5833px, 25px);

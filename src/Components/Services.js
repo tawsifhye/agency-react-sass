@@ -18,27 +18,27 @@ const services = [
     },
     {
         'id': '3',
-        'icon': 'fas fa-layer-group',
+        'icon': 'fas fa-laptop-code',
         'title': 'Graphik Designer',
         'details': 'Create a platform with the best and coolest quality from us.',
     },
     {
         'id': '4',
-        'icon': 'fas fa-laptop-code',
+        'icon': 'fas fa-map-signs',
         'title': 'Motion Graphik',
         'details': 'We provide Graphic Design services, with the best designers',
     },
 
     {
         'id': '5',
-        'icon': 'fas fa-laptop-code',
+        'icon': 'fas fa-camera',
         'title': 'Photography',
         'details': 'We provide Photography services, and of course with the best quality',
     },
 
     {
         'id': '6',
-        'icon': 'fas fa-laptop-code',
+        'icon': 'fas fa-video',
         'title': 'Videography',
         'details': 'Create a platform with the best and coolest quality from us.',
     },

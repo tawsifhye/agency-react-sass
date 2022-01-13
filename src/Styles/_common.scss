@@ -1,48 +1,52 @@
-@import 'Variables';
+@import "Variables";
 @mixin sm {
-    @media (max-width: $sm_breakpoint){
-        @content;
-    }
+  @media (max-width: $sm_breakpoint) {
+    @content;
+  }
+}
+@mixin icon_design($color, $background-color) {
+  padding: 20px;
+  border-radius: 50%;
+  color: $color;
+  background-color: $background-color;
 }
 @mixin button($border, $border_radius, $background_color, $width) {
-    width: $width;
-    border: $border;
-    border-radius: $border_radius;
-    background-color: $background_color;
-    text-decoration: none;
-    text-align: center;
-    color: $white_font;
-    padding: 10px; 
+  width: $width;
+  border: $border;
+  border-radius: $border_radius;
+  background-color: $background_color;
+  text-decoration: none;
+  text-align: center;
+  color: $white_font;
+  padding: 10px;
 }
 
-.container{
-    margin: 0 200px;
-    @include sm{
-        margin: 0 0;
-    }
+.container {
+  margin: 0 200px;
+  @include sm {
+    margin: 0 0;
+  }
 }
 
-.link{
-   
-    color: $white_font;
-    font-size:$navbar_font_size;
-    text-decoration: none;
-    margin-right: 20px;
-    &:first-child{
-        color: $indigo_color;
-    }
+.link {
+  color: $white_font;
+  font-size: $navbar_font_size;
+  text-decoration: none;
+  margin-right: 20px;
+  &:first-child {
+    color: $indigo_color;
+  }
 }
 @mixin title($font-weight, $font-size, $line-height) {
-    color: $white_font;
-    font-weight: $font-weight;
-    font-size: $font-size;
-    line-height: $line-height;
+  color: $white_font;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
 .details {
-    font-size: 13.9375px;
-    line-height: 26px;
-    letter-spacing: -0.43573px;
-    color: rgba(255, 255, 255, 0.7);
+  font-size: 13.9375px;
+  line-height: 26px;
+  letter-spacing: -0.43573px;
+  color: rgba(255, 255, 255, 0.7);
 }
-
