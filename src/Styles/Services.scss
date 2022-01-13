@@ -1,16 +1,17 @@
-@import 'Variables';
-@import 'common';
+@import "Variables";
+@import "common";
 
-.services-section{
-    @extend .container;
-    margin-top: $margin-top;
-    position: relative;
-    div{
-        @include title(700, 39.8214px, 46px);
-        text-align: center;
-    }
-    .services{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+.services-section {
+  @extend .container;
+  margin-top: $margin-top;
+  padding: 0 30px;
+  position: relative;
+  div {
+    @include title(700, 39.8214px, 46px);
+    text-align: center;
+  }
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

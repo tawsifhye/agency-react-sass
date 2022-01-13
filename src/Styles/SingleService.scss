@@ -1,15 +1,32 @@
-@import 'Variables';
-@import 'common';
+@import "Variables";
+@import "common";
 
-.single-service{
-    @extend .container;
-    margin-top: 70px;
-    .service-title{
-        @include title(600,18.5833px,25px);
+.single-service {
+  // @extend .container;
+  margin-top: 30px;
+  padding: 0 70px;
+  &:first-child i {
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: red;
+    // background-image: url('data:../images/laptop-code-solid.svg+xml;utf8,<svg ...><g stroke="red" ... /></g></svg>');
+    // background: url(../images/laptop-code-solid.svg) no-repeat center center;
+
+    &:before {
+      //   content: "";
+      //   background-size: 100px;
+      //   background: url(../images/laptop-code-solid.svg) no-repeat center center;
+      //   color: $white_font;
     }
-    .service-details{
-        @extend .details;
-        font-size: 13.2738px;
-        line-height: 19px;
-    }
+  }
+  .service-title {
+    @include title(600, 18.5833px, 25px);
+  }
+  .service-details {
+    @extend .details;
+    font-size: 13.2738px;
+    line-height: 19px;
+  }
 }
