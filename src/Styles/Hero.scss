@@ -15,6 +15,13 @@
         p{
             @extend .details;
         }
+        .button{
+            @include button(0,  2.65476px, $indigo_color, 135.39px);
+            .arrow{
+                transform: rotate(-35deg);
+            }
+        }
+        
     }
     @include sm{
         display: flex;
