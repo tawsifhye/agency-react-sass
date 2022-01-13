@@ -1,0 +1,21 @@
+@import "Variables";
+@import "common";
+
+.footer {
+  @extend .container;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  a,
+  p {
+    @extend .link;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  div {
+    margin: 0 auto;
+  }
+  @include sm {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

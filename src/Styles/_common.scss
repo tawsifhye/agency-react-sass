@@ -43,9 +43,6 @@
   font-size: $navbar_font_size;
   text-decoration: none;
   margin-right: 20px;
-  &:first-child {
-    color: $indigo_color;
-  }
 }
 @mixin title($font-weight, $font-size, $line-height) {
   color: $white_font;

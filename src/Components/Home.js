@@ -6,6 +6,7 @@ import WhyEnver from './WhyEnver';
 import Services from './Services';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import Footer from './Footer';
 const Home = () => {
     return (
         <>
@@ -15,6 +16,7 @@ const Home = () => {
             <Services />
             <Portfolio />
             <Contact />
+            <Footer />
         </>
     );
 };
