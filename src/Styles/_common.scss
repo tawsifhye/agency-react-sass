@@ -6,7 +6,7 @@
 }
 
 @mixin md {
-  @media (min-width: 575px) and (max-width: 992px) {
+  @media (min-width: $sm_breakpoint) and (max-width: $md_breakpoint) {
     @content;
   }
 }

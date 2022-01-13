@@ -4,6 +4,7 @@ import '../Styles/Home.scss'
 import Hero from './Hero';
 import WhyEnver from './WhyEnver';
 import Services from './Services';
+import Portfolio from './Portfolio';
 const Home = () => {
     return (
         <>
@@ -11,6 +12,7 @@ const Home = () => {
             <Hero />
             <WhyEnver />
             <Services />
+            <Portfolio />
         </>
     );
 };
