@@ -2,13 +2,13 @@
 @import 'common';
 .why-enver{
     @extend .container;
-    margin-top: 100px;
+    margin-top: $margin-top;
   position: relative;
     div{
         display: flex;
         justify-content: space-between;
         div{
-        @include title(bold, 39.8214px, 46px);
+        @include title(700, 39.8214px, 46px);
     }
     p{
         @extend .details;

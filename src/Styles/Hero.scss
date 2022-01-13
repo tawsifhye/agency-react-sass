@@ -3,14 +3,14 @@
 
 .hero-section{
     @extend .container;
-    margin-top: 100px;
+    margin-top: $margin-top;
     display: grid;
     grid-template-columns: 3fr 5fr;
     justify-items: center;
     align-items: center;
     .hero-title{
         div{
-            @include title(bold, 53.0952px, 56px);
+            @include title(700, 53.0952px, 56px);
         }
         p{
             @extend .details;

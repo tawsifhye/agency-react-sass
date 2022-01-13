@@ -1,0 +1,15 @@
+@import 'Variables';
+@import 'common';
+
+.single-service{
+    @extend .container;
+    margin-top: 70px;
+    .service-title{
+        @include title(600,18.5833px,25px);
+    }
+    .service-details{
+        @extend .details;
+        font-size: 13.2738px;
+        line-height: 19px;
+    }
+}
