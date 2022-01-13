@@ -1,0 +1,27 @@
+@import "Variables";
+@import "common";
+
+.contact-section {
+  background-color: rgba(30, 30, 32, 0.5);
+  .contact-elements {
+    @extend .container;
+    margin-top: $margin-top;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include sm {
+      flex-direction: column;
+      justify-content: flex-start;
+      .button {
+        margin-top: 20px;
+      }
+    }
+  }
+  span {
+    @include title(700, 39.82px, 43.8px);
+  }
+  .button {
+    @include button(0, 2.65476px, $indigo_color, 135.39px);
+  }
+}
