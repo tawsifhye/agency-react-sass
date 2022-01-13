@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdPlayArrow } from "react-icons/md";
 import '../Styles/WhyEnver.scss'
 import meeting_img from '../images/image4.png'
 const WhyEnver = () => {
@@ -13,6 +14,7 @@ const WhyEnver = () => {
                 </p>
             </div>
             <img src={meeting_img} alt="" />
+            <MdPlayArrow className="play-icon" />
         </div>
     );
 };
