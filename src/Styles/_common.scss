@@ -4,6 +4,13 @@
     @content;
   }
 }
+
+@mixin md {
+  @media (min-width: 575px) and (max-width: 992px) {
+    @content;
+  }
+}
+
 @mixin icon_design($color, $background-color) {
   padding: 20px;
   border-radius: 50%;
@@ -24,6 +31,9 @@
 .container {
   margin: 0 200px;
   @include sm {
+    margin: 0 0;
+  }
+  @include md {
     margin: 0 0;
   }
 }
